@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cookbook/animation/page_route_transition.dart';
+
+import 'package:flutter_cookbook/animation/physics_simulation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Route1(),
+      home: const PhysicsCardDragDemo(),
     );
   }
 }
