@@ -9,6 +9,7 @@ class ObjectFade extends StatefulWidget {
 
 class _ObjectFadeState extends State<ObjectFade> {
   bool _visible = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

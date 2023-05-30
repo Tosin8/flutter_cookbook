@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/animation/fade_in_out.dart';
 
-import 'package:flutter_cookbook/animation/physics_simulation.dart';
-
 void main() {
   runApp(const MyApp());
 }
