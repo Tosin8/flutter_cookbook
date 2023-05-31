@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/design/orientation.dart';
 
 import 'package:flutter_cookbook/design/snack_bar.dart';
+import 'package:flutter_cookbook/design/using_tabs.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Orientation_Grid(),
+      home: const Tab_Control(),
     );
   }
 }
