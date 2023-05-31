@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cookbook/design/orientation.dart';
 
-import 'package:flutter_cookbook/design/snack_bar.dart';
 import 'package:flutter_cookbook/design/using_tabs.dart';
 
 void main() {
@@ -16,6 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,

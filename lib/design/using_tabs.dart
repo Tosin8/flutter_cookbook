@@ -23,6 +23,57 @@ class Tab_Control extends StatelessWidget {
           title: const Text('Hello World'),
           centerTitle: true,
         ),
+        body: TabBarView(
+            children: [const Icon(Icons.directions_car), page2(), page3()]),
+      ),
+    );
+  }
+
+  Container page3() {
+    return Container(
+      decoration: const BoxDecoration(color: Colors.yellow),
+      child: ListView(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Image.asset(''),
+              const Text(
+                'Housing',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              )
+            ],
+          )
+        ],
+      ),
+    );
+  }
+
+  Container page2() {
+    return Container(
+      decoration: const BoxDecoration(color: Colors.blue),
+      child: ListView(
+        children: [
+          Container(
+            decoration: const BoxDecoration(
+              color: Colors.pink,
+            ),
+            height: 300,
+            width: 300,
+          ),
+          Container(
+            decoration: const BoxDecoration(color: Colors.green),
+            height: 300,
+            width: 300,
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              color: Colors.pink,
+            ),
+            height: 300,
+            width: 300,
+          ),
+        ],
       ),
     );
   }
