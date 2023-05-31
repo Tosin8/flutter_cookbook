@@ -5,6 +5,25 @@ class Snack_Bar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('SnackBar Demo'),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+      ),
+      body: Center(
+        child: ElevatedButton(
+            onPressed: () {
+              final snackBar = SnackBar(
+                  content: const Text('Yah!, A SnackBar!'),
+                  action: SnackBarAction(
+                    label: 'Undo',
+                    onPressed: () {},
+                  ));
+              ScaffoldMessenger.of(context).showSnackBar(snackBar);
+            },
+            child: const Text('Show SnackBar')),
+      ),
+    );
   }
 }
