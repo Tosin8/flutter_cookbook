@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cookbook/design/drawer.dart';
-import 'package:flutter_cookbook/animation/fade_in_out.dart';
+
+import 'package:flutter_cookbook/design/snack_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ObjectFade(),
+      home: const Snack_Bar(),
     );
   }
 }
