@@ -3,6 +3,8 @@
 // 2. Add textform field with validtion logic
 // 3. Create a button to validate and submit the form.
 
+// using a global key is the recommeded way to access a form, and if there's more complex widget tree, using Form.of()method to access the form within the nested widgets.
+
 import 'package:flutter/material.dart';
 
 class Form_Valid extends StatefulWidget {
@@ -13,8 +15,23 @@ class Form_Valid extends StatefulWidget {
 }
 
 class _Form_ValidState extends State<Form_Valid> {
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Form(
+      key: _formKey,
+      child: Column(
+        children: [
+          TextFormField(
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return 'Please enter some text';
+              }
+              return null;
+            },
+          ),
+        ],
+      ),
+    );
   }
 }
