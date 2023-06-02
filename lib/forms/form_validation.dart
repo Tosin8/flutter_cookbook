@@ -18,19 +18,33 @@ class _Form_ValidState extends State<Form_Valid> {
   final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
-    return const Form(
-      key: _formKey,
-      child: Column(
-        children: [
-          TextFormField(
-            validator: (value) {
-              if (value == null || value.isEmpty) {
-                return 'Please enter some text';
-              }
-              return null;
-            },
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 50),
+        child: Form(
+          key: _formKey,
+          child: Column(
+            children: [
+              TextFormField(
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter some text';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton(
+                  onPressed: () {
+                    if (_formKey.currentState!.validate()) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text('Processing Data')));
+                    }
+                  },
+                  child: const Text('Submit')),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
