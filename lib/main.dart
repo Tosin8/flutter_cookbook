@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/gestures/inkwell_button.dart';
+import 'package:flutter_cookbook/images/placeholder_image.dart';
 
 import 'gestures/dismiss_item.dart';
 
