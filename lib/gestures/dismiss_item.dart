@@ -25,6 +25,7 @@ class _Item_SwapState extends State<Item_Swap> {
                   ScaffoldMessenger.of(context)
                       .showSnackBar(SnackBar(content: Text('$item dismissed')));
                 },
+                background: Container(color: Colors.red),
                 child: ListTile(
                   title: Text(item),
                 ));
