@@ -12,6 +12,7 @@ class Form_Style extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 8, vertical: 50),
             child: TextField(
+              autofocus: true,
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: 'Enter a search Item',
