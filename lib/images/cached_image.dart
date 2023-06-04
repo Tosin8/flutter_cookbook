@@ -15,7 +15,9 @@ class Cached_Image extends StatelessWidget {
         elevation: 10,
         centerTitle: true,
       ),
-      body: Center(),
+      body: Center(
+        child: CachedNetworkImage,
+      ),
     );
   }
 }
