@@ -14,6 +14,9 @@ class _Floating_BarState extends State<Floating_Bar> {
       appBar: AppBar(
         title: const Text('Floating Bar'),
       ),
+      body: CustomScrollView(
+        slivers: [],
+      ),
     );
   }
 }
