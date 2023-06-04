@@ -7,6 +7,7 @@ import 'package:flutter_cookbook/images/placeholder_image.dart';
 import 'package:flutter_cookbook/lists/floating_appbar.dart';
 import 'package:flutter_cookbook/lists/horizontal_list.dart';
 import 'package:flutter_cookbook/lists/using_list.dart';
+import 'package:flutter_cookbook/navigation/hero_demo.dart';
 
 import 'gestures/dismiss_item.dart';
 
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Floating_Bar(),
+      home: const MainScreen(),
     );
   }
 }
