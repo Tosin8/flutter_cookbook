@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/gestures/inkwell_button.dart';
 import 'package:flutter_cookbook/images/cached_image.dart';
 import 'package:flutter_cookbook/images/placeholder_image.dart';
+import 'package:flutter_cookbook/lists/horizontal_list.dart';
 
 import 'gestures/dismiss_item.dart';
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Cached_Image(),
+      home: const list_horizontal(),
     );
   }
 }
