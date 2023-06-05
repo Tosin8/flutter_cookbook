@@ -10,6 +10,7 @@ import 'package:flutter_cookbook/lists/using_list.dart';
 import 'package:flutter_cookbook/navigation/hero_demo.dart';
 
 import 'gestures/dismiss_item.dart';
+import 'navigation/nav_newscreen.dart';
 
 void main() {
   runApp(const MyApp());
