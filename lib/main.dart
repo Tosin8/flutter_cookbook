@@ -1,13 +1,7 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
-import 'package:flutter_cookbook/gestures/inkwell_button.dart';
-import 'package:flutter_cookbook/images/cached_image.dart';
-import 'package:flutter_cookbook/images/placeholder_image.dart';
-import 'package:flutter_cookbook/lists/floating_appbar.dart';
-import 'package:flutter_cookbook/lists/horizontal_list.dart';
-import 'package:flutter_cookbook/lists/using_list.dart';
-import 'package:flutter_cookbook/navigation/hero_demo.dart';
+
 import 'package:flutter_cookbook/plugins/playing_video.dart';
 
 import 'gestures/dismiss_item.dart';
