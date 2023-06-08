@@ -20,7 +20,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     // offers several different constructors to play videos from assets, files,
     // or the internet.
     _controller = VideoPlayerController.network(
-      'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
+      'https://www.pexels.com/video/sensation-16296842/',
     );
 
     // Initialize the controller and store the Future for later use.
@@ -42,7 +42,12 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Butterfly Video'),
+        backgroundColor: Colors.blue,
+        title: const Text(
+          'Pexel Video Sample',
+          style: TextStyle(color: Colors.white),
+        ),
+        centerTitle: true,
       ),
       // Use a FutureBuilder to display a loading spinner while waiting for the
       // VideoPlayerController to finish initializing.
