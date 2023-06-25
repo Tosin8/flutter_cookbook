@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
+import 'package:flutter_cookbook/animation/fade_in_out.dart';
 
 import 'package:flutter_cookbook/plugins/playing_video.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const VideoPlayerScreen(),
+      home: const ObjectFade(),
     );
   }
 }
