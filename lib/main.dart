@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/animation/fade_in_out.dart';
 
 import 'package:flutter_cookbook/plugins/playing_video.dart';
+import 'package:flutter_cookbook/tutorials_point/ecommerce_sample.dart';
 
 import 'gestures/dismiss_item.dart';
 import 'navigation/nav_newscreen.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ObjectFade(),
+      home: const eCommerce(),
     );
   }
 }
