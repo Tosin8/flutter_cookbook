@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/animation/fade_in_out.dart';
+import 'package:flutter_cookbook/lists/floating_appbar.dart';
 
 import 'package:flutter_cookbook/plugins/playing_video.dart';
 import 'package:flutter_cookbook/tutorials_point/ecommerce_sample.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const eCommerce(),
+      home: const Floating_Bar(),
     );
   }
 }
